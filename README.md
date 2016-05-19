@@ -12,4 +12,6 @@ All observations are aggregated by the time of day. Still need to add time.
 #### 3D kernel density
 3D kernel density of observations with Z coordinate as time of day (Space-Time Cube), visualized using multiple isosurfaces. All observations are aggregated by the time of day.
 
+![3D kernel density of observations with Z as time of day](img/out_270.png "3D kernel density of observations with Z as time of day, visualized using multiple isosurfaces")
+![3D kernel density of observations with Z as time of day](img/out_230.png "3D kernel density of observations with Z as time of day, visualized using multiple isosurfaces")
 ![3D kernel density of observations with Z as time of day](img/STC_voxel_10823.gif "3D kernel density of observations with Z as time of day, visualized using multiple isosurfaces")
