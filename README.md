@@ -19,3 +19,13 @@ All observations are aggregated by the time of day.
 ![3D kernel density of observations with Z as time of day](img/out_270.png "3D kernel density of observations with Z as time of day, visualized using multiple isosurfaces")
 ![3D kernel density of observations with Z as time of day](img/out_230.png "3D kernel density of observations with Z as time of day, visualized using multiple isosurfaces")
 ![3D kernel density of observations with Z as time of day](img/STC_voxel_10823.gif "3D kernel density of observations with Z as time of day, visualized using multiple isosurfaces")
+
+In these examples color means time of the day. We show only 1 isosurface.
+
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMMEdlQnZ2Vk04XzQ"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMMEdlQnZ2Vk04XzQ" width="200px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQUhfX1dvX0s0aDQ"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQUhfX1dvX0s0aDQ" width="300px" title="Click for the larger version." /></a>
+
+From the figures we can quickly understand which time of the day the place gets busy. For example
+
+
+
