@@ -68,6 +68,12 @@ def kde(points):
     map3d.write(mapname="map3d_{}".format(name.split('_')[-1]), overwrite=True)
 
 
+def color_time():
+    rules = ['6 blue', '9 blue', '9 116:197:25', '11 116:197:25', '11 yellow', '13 yellow',
+             '13 orange', '17 orange', '17 red', '21 red']
+    gscript.run_command('r3.mapcalc', exp="time = float(depth() - 1) * 30 / 60 + 330 / float(60)", overwrite=True)
+    gscript.write_command('r3.colors', map='time', rules='-', stdin='\n'.join(rules))
+
 if __name__ == '__main__':
     gscript.use_temp_region()
     vectors = gscript.list_grouped(type='vector', pattern="people_*")['PERMANENT']
