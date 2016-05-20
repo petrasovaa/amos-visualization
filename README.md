@@ -25,7 +25,13 @@ In these examples color means time of the day. We show only 1 isosurface.
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMMEdlQnZ2Vk04XzQ"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMMEdlQnZ2Vk04XzQ" width="200px" title="Click for the larger version." /></a>
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQUhfX1dvX0s0aDQ"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQUhfX1dvX0s0aDQ" width="300px" title="Click for the larger version." /></a>
 
-From the figures we can quickly understand which time of the day the place gets busy. For example
+From the figures we can quickly understand which time of the day the place gets busy. For example these places get busy towards the evening:
 
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQVEzTEhZZWRPcTA"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQVEzTEhZZWRPcTA" width="300px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMU1h1RmVRcmtqSjQ"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMU1h1RmVRcmtqSjQ" width="300px" title="Click for the larger version." /></a>
 
+Here we can see less people during afternoon (perhaps siesta since it is in italy and Spain):
+
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMRjJJX0taQjJIY0U"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMRjJJX0taQjJIY0U" width="300px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28" width="300px" title="Click for the larger version." /></a>
 
