@@ -4,10 +4,14 @@ Experimenting with the analysis and visualization of density of people found in 
 ### Visualization examples
 
 #### 2D kernel density
-All observations are aggregated by the time of day. Still need to add time.
+All observations are aggregated by the time of day. 
 
-![Kernel density through time](img/kernel2D_10823.gif "Kernel density through time")
-
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMbk5jTlpUQVVjcmM"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMbk5jTlpUQVVjcmM" width="400px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMTDRKeXBKVjUwM0E"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMTDRKeXBKVjUwM0E" width="400px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMUUwzM2N0V0lfcU0"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMUUwzM2N0V0lfcU0" width="400px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMcHFsaWxJX2dNY2c"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMcHFsaWxJX2dNY2c" width="400px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMalprQWdsMmMyUXc"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMalprQWdsMmMyUXc" width="400px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMU0IxQjhwY2JDTnc"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMU0IxQjhwY2JDTnc" width="400px" title="Click for the larger version." /></a>
 
 #### 3D kernel density
 3D kernel density of observations with Z coordinate as time of day (Space-Time Cube), visualized using multiple isosurfaces. All observations are aggregated by the time of day.
