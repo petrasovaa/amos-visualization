@@ -30,7 +30,7 @@ From the figures we can quickly understand which time of the day the place gets 
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQVEzTEhZZWRPcTA"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMQVEzTEhZZWRPcTA" width="300px" title="Click for the larger version." /></a>
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMU1h1RmVRcmtqSjQ"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMU1h1RmVRcmtqSjQ" width="300px" title="Click for the larger version." /></a>
 
-Here we can see less people during afternoon (perhaps siesta since it is in italy and Spain):
+Here we can see less people during afternoon (perhaps siesta since it is in Italy and Spain):
 
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMRjJJX0taQjJIY0U"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMRjJJX0taQjJIY0U" width="300px" title="Click for the larger version." /></a>
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28" width="300px" title="Click for the larger version." /></a>
