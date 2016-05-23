@@ -87,7 +87,10 @@ def main(filename, out):
         if camera not in data:
             data[camera] = []
             urls.append((url, camera))
-        data[camera].append(((year, month, day, hour, minut, sec), (float(x) + float(w) / 2., float(y) - float(h) / 2.)))
+        # middle point
+        #data[camera].append(((year, month, day, hour, minut, sec), (float(x) + float(w) / 2., float(y) - float(h) / 2.)))
+        # bottom point
+        data[camera].append(((year, month, day, hour, minut, sec), (float(x) + float(w) / 2., float(y))))
 
     cols = [(u'cat', 'INTEGER PRIMARY KEY'),
             (u'date', 'TEXT'),
@@ -96,18 +99,21 @@ def main(filename, out):
             ('minutes', 'INTEGER')]
 
     for each in data.keys():
+        # middle point
         name = out + '_' + each
+        # bottom point
+        name = out + '_bottom_' + each
         with VectorTopo(name, mode='w', tab_cols=cols[:], with_z=True) as points:
             for time, coor in data[each]:
                 pw, ph = dim[int(each)].split('x')
                 t = datetime.datetime(*time)
                 z = t.hour * 60 + t.minute + t.second/60.
                 p = Point(coor[0] / 2., int(ph) - coor[1] / 2., z)
+                p2 = Point(coor[0] / 2., int(ph) - coor[1] / 2., z)
                 dt = datetime.datetime(*time)
                 points.write(p, (dt.strftime("%x"), dt.strftime("%X"), t.hour, t.minute))
                 # save the changes to the database
             points.table.conn.commit()
-        gscript.run_command('v.out.ascii', input=name, output=name + '.txt', format='point', overwrite=True)
 
 #    for url, cam in urls:
 #        print 'wget -O camera_' + cam + '.jpg ' + url 
