@@ -95,11 +95,11 @@ def main(camera):
         new.append([X, Y])
         new[-1].extend(point[2:])
         new[-1] = '|'.join([str(each) for each in new[-1]])
-    gscript.write_command('v.in.ascii', input='-',
+    gscript.write_command('v.in.ascii', input='-', flags='z',
                           output='rectified_points_{}'.format(camera), overwrite=True,
                           stdin='\n'.join(new),
                           columns="x double precision,y double precision,height double precision,cat integer,date varchar(50),time varchar(50),hour integer,minutes integer" ,
-                          x=1, y=2, cat=4)
+                          x=1, y=2, z=3, cat=4)
 
 
 if __name__ == '__main__':
