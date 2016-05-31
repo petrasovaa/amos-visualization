@@ -2,6 +2,15 @@
 Experimenting with the analysis and visualization of density of people found in web camera images (project AMOS,  the Archive of Many Outdoor Scenes)
 
 ### Visualization examples
+####Images with georeferenced people
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMdEEtcVRfN0dScjA"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMdEEtcVRfN0dScjA" width="300px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMUGxEVVlyZHY4bUE"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMUGxEVVlyZHY4bUE" width="300px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMYkZkbmtkUE5JT2s"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMYkZkbmtkUE5JT2s" width="300px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMajRZaVV6SXdLZUk"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMajRZaVV6SXdLZUk" width="300px" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMSnJJZGdpdHJGckU"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMSnJJZGdpdHJGckU" width="250px" title="Click for the larger version." /></a>
+
+
+
 
 #### 2D kernel density
 All observations are aggregated by the time of day. The color ramp is absolute for all animations to allow for comparison. 
@@ -36,3 +45,7 @@ Here we can see less people during afternoon (perhaps siesta since it is in Ital
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28" width="300px" title="Click for the larger version." /></a>
 
 Additional figures are [available here](https://drive.google.com/drive/u/0/folders/0B7CQoT4YE2mMYkc0a1Y2UWIyZ0E)
+
+
+
+
