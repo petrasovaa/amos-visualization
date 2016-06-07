@@ -2,6 +2,13 @@
 Victoria Square in Adelaide redesigned in 2014, see [Google maps](https://goo.gl/maps/XjLRxYxueUm).
 State before is on the left. Source of the ortho is Google maps.
 
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMLWxURGRidnY2WnM">
+<img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMLWxURGRidnY2WnM" width="350px"
+title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMZHhzQXJlcHdsbUU">
+<img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMZHhzQXJlcHdsbUU" width="350px"
+title="Click for the larger version." /></a>
+
 
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMMEdlQnZ2Vk04XzQ">
 <img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMMEdlQnZ2Vk04XzQ" width="150px"
