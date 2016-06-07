@@ -2,7 +2,7 @@
 Experimenting with the analysis and visualization of density of people found in web camera images (project AMOS,  the Archive of Many Outdoor Scenes)
 
 ### Visualization examples
-For comparison of Victoria Square before and after redesign, see [separate page](Comparison_3760.md).
+For comparison of Victoria Square before and after redesign, see [separate page](comparison_3760.md).
 
 
 #### 2D kernel density
