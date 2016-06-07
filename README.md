@@ -2,14 +2,7 @@
 Experimenting with the analysis and visualization of density of people found in web camera images (project AMOS,  the Archive of Many Outdoor Scenes)
 
 ### Visualization examples
-####Images with georeferenced people
-<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMdEEtcVRfN0dScjA"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMdEEtcVRfN0dScjA" width="300px" title="Click for the larger version." /></a>
-<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMUGxEVVlyZHY4bUE"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMUGxEVVlyZHY4bUE" width="300px" title="Click for the larger version." /></a>
-<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMYkZkbmtkUE5JT2s"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMYkZkbmtkUE5JT2s" width="300px" title="Click for the larger version." /></a>
-<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMajRZaVV6SXdLZUk"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMajRZaVV6SXdLZUk" width="300px" title="Click for the larger version." /></a>
-<a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMSnJJZGdpdHJGckU"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMSnJJZGdpdHJGckU" width="250px" title="Click for the larger version." /></a>
-
-
+For comparison of Victoria Square before and after redesign, see [separate page](Comparison_3760.md).
 
 
 #### 2D kernel density
