@@ -6,7 +6,8 @@ For comparison of Victoria Square before and after redesign, see [separate page]
 
 
 #### 2D kernel density
-All observations are aggregated by the time of day. The color ramp is absolute for all animations to allow for comparison. 
+All observations are aggregated by the time of day. The color ramp is absolute for all animations to allow for comparison.
+The values represent people per pixel (map unit).
 
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMbk5jTlpUQVVjcmM"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMbk5jTlpUQVVjcmM" width="400px" title="Click for the larger version." /></a>
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMTDRKeXBKVjUwM0E"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMTDRKeXBKVjUwM0E" width="400px" title="Click for the larger version." /></a>
