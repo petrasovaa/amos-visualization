@@ -2,9 +2,12 @@
 Experimenting with the analysis and visualization of density of people found in web camera images (project AMOS,  the Archive of Many Outdoor Scenes)
 
 ### Visualization examples
+For comparison of Victoria Square before and after redesign, see [separate page](comparison_3760.md).
+
 
 #### 2D kernel density
-All observations are aggregated by the time of day. The color ramp is absolute for all animations to allow for comparison. 
+All observations are aggregated by the time of day. The color ramp is absolute for all animations to allow for comparison.
+The values represent people per pixel (map unit).
 
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMbk5jTlpUQVVjcmM"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMbk5jTlpUQVVjcmM" width="400px" title="Click for the larger version." /></a>
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMTDRKeXBKVjUwM0E"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMTDRKeXBKVjUwM0E" width="400px" title="Click for the larger version." /></a>
@@ -36,3 +39,7 @@ Here we can see less people during afternoon (perhaps siesta since it is in Ital
 <a href="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28"><img src="https://drive.google.com/uc?export=view&id=0B7CQoT4YE2mMWXZFeFFsRzFyQ28" width="300px" title="Click for the larger version." /></a>
 
 Additional figures are [available here](https://drive.google.com/drive/u/0/folders/0B7CQoT4YE2mMYkc0a1Y2UWIyZ0E)
+
+
+
+
