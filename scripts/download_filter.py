@@ -109,7 +109,6 @@ def download_json(camera):
                     i += 1
                 page += 1
                 if resp.json()['next']:
-                    print "next"
                     resp = requests.get(url=url, params={'submission__image__webcam': camera.id, 'page': page})
                     f.write(',\n')
                 else:
@@ -130,7 +129,8 @@ def overlap(bboxA, bboxB):
 
 
 def get_bbox_point(bbox):
-    return (bbox.x + bbox.w / 2, bbox.y + bbox.h / 2)
+    # middle of x, bottom of bbox for georeferencing
+    return (bbox.x + bbox.w / 2, bbox.y + bbox.h)
 
 
 def get_bboxes_point(bbox_list):
@@ -157,7 +157,7 @@ def resolve_duplicates(duplicates):
             if outlineB in removed:
                 continue
             # gather duplicates by overap and workers
-            if overlap(outlineA, outlineB) >= threshold:  # and outlineA.worker != outlineB.worker:
+            if overlap(outlineA, outlineB) >= threshold and outlineA.worker != outlineB.worker:
                 overlapping.append(outlineB)
         if len(overlapping) > 1:
             x, y = get_bboxes_point(overlapping)
@@ -194,7 +194,7 @@ def filterhits(camera, data):
                     instance[timestamp][record['type']].add(bbox)
 
     with open('camera_{}_points.csv'.format(camera.id), 'w') as f:
-        f.write('year,month,day,hour,minute,type,count,x,y,url\n')
+        f.write('year,month,day,hour,minute,type,count,x,y,url,url2,y,m,d,h,mi,camw,camh\n')
         for timestamp in sorted(instance.keys()):
             date, time = timestamp.split('T')
             y, m, d = date.split('-')
@@ -214,9 +214,14 @@ def filterhits(camera, data):
 
 
 if __name__ == '__main__':
-    all_cams = get_cameras('stableBEOutlines')
-    print all_cams
+    for each in ('stableBEOutlines', 'stableBEchangeValidation', 'sfmRectangles', 'plazas'):
+        cam = get_cameras(each)
+        print each
+        for camid in cam.keys():
+            print "{}: {}".format(camid, cam[camid] )
 
+#    print all_cams
+    
     for each_camera in sys.argv[1:]:
         print each_camera
         camera_id = each_camera
