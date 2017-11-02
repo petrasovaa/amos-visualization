@@ -39,8 +39,16 @@ def main(input_dir, output_csv):
         for lfile in label_files:
             with open(lfile, 'r') as l:
                 lines = l.readlines()
+                num = int(lines[0].strip())
+                # write record with no people in image
+                if num == 0:
+                    # time
+                    name = os.path.basename(lfile).strip(extension)
+                    year, month, day, hour, minut = parse_name(name)
+                    csv.write(','.join([year, month, day, hour, minut,
+                                       '', '0', '', '', '']))
+                    csv.write('\n')
                 lines = lines[1:]
-
                 count = 0
                 for line in lines:
                     # count classes
