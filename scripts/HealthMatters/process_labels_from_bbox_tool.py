@@ -13,10 +13,17 @@ import glob
 classes_for_counting = ('both', 'Geo')
 
 
-def get_point_from_bbox(x1, y1, x2, y2):
+def get_point_from_bbox_bottom(x1, y1, x2, y2, h):
     """Extracts point from bbox, in this case the bottom middle point (people's feet)"""
     x = (x1 + x2) / 2.
-    y = y2
+    y = h - y2
+    return x, y
+
+
+def get_point_from_bbox_center(x1, y1, x2, y2, h):
+    """Extracts point from bbox, in this case the central point"""
+    x = (x1 + x2) / 2.
+    y = h - (y1 + y2) / 2.
     return x, y
 
 
@@ -29,12 +36,12 @@ def parse_name(name):
     return year, month, day, hour, minut
 
 
-def main(input_dir, output_csv):
+def main(input_dir, output_csv, image_height):
     extension = '.txt'
     label_files = sorted(glob.glob(os.path.join(input_dir, '*' + extension)))
     with open(output_csv, 'w') as csv:
         csv.write(','.join(['year', 'month', 'day', 'hour', 'minute',
-                            'type', 'count', 'xgeo', 'ygeo', 'bbox [x1 y1 x2 y2]']))
+                            'type', 'count', 'x', 'y', 'xgeo', 'ygeo', 'bbox [x1 y1 x2 y2]']))
         csv.write('\n')
         for lfile in label_files:
             with open(lfile, 'r') as l:
@@ -59,22 +66,25 @@ def main(input_dir, output_csv):
                 for line in lines:
                     # coordinates
                     xtl, ytl, xbr, ybr, cat = line.strip().split()
-                    x, y = get_point_from_bbox(int(float(xtl)), int(float(ytl)),
-                                               int(float(xbr)), int(float(ybr)))
+                    xb, yb = get_point_from_bbox_bottom(int(float(xtl)), int(float(ytl)),
+                                                        int(float(xbr)), int(float(ybr)), image_height)
+                    xc, yc = get_point_from_bbox_center(int(float(xtl)), int(float(ytl)),
+                                                        int(float(xbr)), int(float(ybr)), image_height)
                     # time
                     name = os.path.basename(lfile).strip(extension)
                     year, month, day, hour, minut = parse_name(name)
 
                     csv.write(','.join([year, month, day, hour, minut,
-                                       cat, str(count), str(x), str(y),
+                                       cat, str(count), str(xc), str(yc), str(xb), str(yb),
                                        '[{} {} {} {}]'.format(xtl, ytl, xbr, ybr)]))
                     csv.write('\n')
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         print "ERROR: Missing input or output"
     else:
         input_dir = sys.argv[1]
         output_csv = sys.argv[2]
-        main(input_dir, output_csv)
+        image_height = int(float(sys.argv[3]))
+        main(input_dir, output_csv, image_height)
