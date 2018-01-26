@@ -53,7 +53,7 @@ def main(input_dir, output_csv, image_height):
                     name = os.path.basename(lfile).strip(extension)
                     year, month, day, hour, minut = parse_name(name)
                     csv.write(','.join([year, month, day, hour, minut,
-                                       '', '0', '', '', '']))
+                                       '', '0', '', '', '', '', '']))
                     csv.write('\n')
                 lines = lines[1:]
                 count = 0
