@@ -18,7 +18,7 @@ def main(input_csv, output_csv):
             sum_count = None
             n_samples = 0
             for line in icsv.readlines()[1:]:
-                year, month, day, hour, minute, typ, count, x, y, xgeo, ygeo, bbox = line.split(',')
+                year, month, day, hour, minute, typ, count, x, y, xgeo, ygeo, bbox = line.strip().split(',')
                 time = [year, month, day, hour]
                 if time == last_time:
                     if minute != last_minute:
