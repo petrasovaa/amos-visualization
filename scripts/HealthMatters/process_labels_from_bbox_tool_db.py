@@ -26,11 +26,18 @@ def parse_location(name):
 
 def parse_timestamp(name):
     """Get date and time based on file name"""
-    # uses this convention: 2017-08-10-19h39m38
-    year, month, day, time = name.split('-')
-    hour, minsec = time.split('h')
-    minut, sec = minsec.split('m')
-    return year, month, day, hour, minut
+    # use this convention: 2017-08-10-19h39m38
+    # NEST uses this convention: 2017-08-10_19-39-38
+    if 'h' in name:
+        year, month, day, time = name.split('-')
+        hour, minsec = time.split('h')
+        minut, sec = minsec.split('m')
+        return year, month, day, hour, minut
+    else:
+        date, time = name.split('_')
+        year, month, day = date.split('-')
+        hour, minut, sec = time.split('-')
+        return year, month, day, hour, minut
 
 
 def process_dir(input_dir, output_csv_file):
