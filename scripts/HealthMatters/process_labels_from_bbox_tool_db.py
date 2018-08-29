@@ -63,7 +63,12 @@ def process_dir(input_dir, output_csv_file):
             count = 0
             for line in lines:
                 # count classes
-                xtl, ytl, xbr, ybr, cat = line.strip().split()
+                box = line.strip().split()
+                if len(box) == 5:
+                    xtl, ytl, xbr, ybr, cat = box
+                else:
+                    cat = classes_for_counting[0]
+                    xtl, ytl, xbr, ybr = box
                 if cat in classes_for_counting:
                     count += 1
             # time
