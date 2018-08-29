@@ -50,7 +50,11 @@ def process_dir(input_dir, output_csv_file):
             num = int(lines[0].strip())
             # time
             name = os.path.basename(lfile).strip(extension)
-            year, month, day, hour, minut = parse_timestamp(name)
+            try:
+                year, month, day, hour, minut = parse_timestamp(name)
+            except ValueError:
+                print 'failed to process file ' + name
+                continue
             isodate = datetime.datetime(int(year), int(month), int(day), int(hour), int(minut))
             weekday = str(isodate.isoweekday())
             isodate = str(isodate)
@@ -98,16 +102,16 @@ def main(label_dir, output_csv, output_sqlite):
         for dir_to_process in dirs_to_process:
             print "Processing: " + dir_to_process
             process_dir(dir_to_process, f)
-    db_dump(output_csv, output_sqlite)
+    #db_dump(output_csv, output_sqlite)
 
 # example query: select park, strftime('%Y-%m-%d', isodate) as yr_mo_day, sum(count) from counts group by park, yr_mo_day;
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 2:
         print "ERROR: Missing input or output"
     else:
         label_dir = '.'
         output_csv = sys.argv[1]
-        output_sqlite = sys.argv[2]
-        main(label_dir, output_csv, output_sqlite)
+        #output_sqlite = sys.argv[2]
+        main(label_dir, output_csv)
 
