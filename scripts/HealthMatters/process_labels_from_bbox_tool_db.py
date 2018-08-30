@@ -94,7 +94,7 @@ def db_dump(output_csv, output_sqlite):
     con.close()
 
 
-def main(label_dir, output_csv, output_sqlite):
+def main(label_dir, output_csv):
     dirs_to_process = glob.glob(os.path.join(label_dir, '*_*_*_*'))
     with open(output_csv, 'w') as f:
         f.write(','.join(["county", "city", "park", "camera", "isodate", "year", "month", "day", "hour", "minute", "weekday", "count"]))
